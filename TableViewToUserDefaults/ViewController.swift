@@ -9,11 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    @IBOutlet var sharedUserDefaultsController: NSUserDefaultsController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        sharedUserDefaultsController.appliesImmediately = true
     }
 
     override var representedObject: Any? {
