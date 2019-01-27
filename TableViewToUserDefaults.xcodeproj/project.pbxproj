@@ -11,6 +11,7 @@
 		6FCAB4E821FD4CCE005DEFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCAB4E721FD4CCE005DEFCE /* ViewController.swift */; };
 		6FCAB4EA21FD4CCF005DEFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FCAB4E921FD4CCF005DEFCE /* Assets.xcassets */; };
 		6FCAB4ED21FD4CCF005DEFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FCAB4EB21FD4CCF005DEFCE /* Main.storyboard */; };
+		6FCAB4F621FD4D6B005DEFCE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCAB4F521FD4D6B005DEFCE /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		6FCAB4EC21FD4CCF005DEFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FCAB4EE21FD4CCF005DEFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FCAB4EF21FD4CCF005DEFCE /* TableViewToUserDefaults.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TableViewToUserDefaults.entitlements; sourceTree = "<group>"; };
+		6FCAB4F521FD4D6B005DEFCE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6FCAB4EB21FD4CCF005DEFCE /* Main.storyboard */,
 				6FCAB4EE21FD4CCF005DEFCE /* Info.plist */,
 				6FCAB4EF21FD4CCF005DEFCE /* TableViewToUserDefaults.entitlements */,
+				6FCAB4F521FD4D6B005DEFCE /* Settings.swift */,
 			);
 			path = TableViewToUserDefaults;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FCAB4F621FD4D6B005DEFCE /* Settings.swift in Sources */,
 				6FCAB4E821FD4CCE005DEFCE /* ViewController.swift in Sources */,
 				6FCAB4E621FD4CCE005DEFCE /* AppDelegate.swift in Sources */,
 			);
@@ -272,16 +276,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TableViewToUserDefaults/TableViewToUserDefaults.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3PZ6TZD9X4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableViewToUserDefaults/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = net.decpp.TableViewToUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -291,16 +298,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TableViewToUserDefaults/TableViewToUserDefaults.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3PZ6TZD9X4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableViewToUserDefaults/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = net.decpp.TableViewToUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
